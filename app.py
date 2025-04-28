@@ -14,7 +14,7 @@ import os
 # GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-Initialize Groq client using Streamlit secrets
+# Initialize Groq client using Streamlit secrets
 GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", "")
 GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", "")
 groq_client = Groq(api_key=GROQ_API_KEY)
